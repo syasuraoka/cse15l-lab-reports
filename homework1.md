@@ -41,3 +41,4 @@ You can get the screen like this. For instance, when you type `cat /home/linux/i
 <img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午後4.36.31.png" width="70%">
 
 
+
