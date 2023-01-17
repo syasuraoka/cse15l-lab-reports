@@ -17,7 +17,7 @@ Then, open VSCode terminal from Terminal → New Terminal menu option, and type 
 
 If this is the first time you've connected to this server, you'll get the message like this.
 ```
-⤇ ssh cs15lwi23hs@ieng6.ucsd.edu
+⤇ ssh cs15lwi23ahs@ieng6.ucsd.edu
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
@@ -25,7 +25,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 Type `yes` and press the enter key.
 
 Then, you'll be asked your password. Type your password and enter, and you'll terminal will be like this.
-<img src="", >
+<img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午前11.58.38.png" width="70%">
 
 **Trying Some Commands**
 
