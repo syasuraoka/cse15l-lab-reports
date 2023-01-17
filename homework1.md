@@ -1,14 +1,16 @@
 # Tutorial
 ## How to log into your course-specific account on `ieng6`?
 
-**Installing VSCode** <br>
-VSCode is a popular, free code editor with advanced features and customization options. Normally, you can install VSCode from [here](https://code.visualstudio.com/download), but sometime you've already installed VSCode for other purpose (e.g. CSE11). Once installed, you will get this screen.
+## 1. Installing VSCode <br>
+VSCode is a popular, free code editor with advanced features and customization options. Normally, you can install VSCode from [here](https://code.visualstudio.com/download), but sometime you've already installed VSCode for other purpose (e.g. CSE11). Once installed, you will get the screen like this.
+
 <img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午前10.20.25.png" width="35%">
 
 
 
-**Remotely Connecting** <br>
+## 2. Remotely Connecting <br>
 You'll be able to connect to a remote computer by using VSCode terminal. <br>
+
 First, if you are a Windows user, install `git` for Windows from [here](). Once installed, use the steps [in this post]() to set your default terminal to use the newly-installed `git bash` in VS Code. If you are a Mac user, you can skip these steps.
 
 Then, open VSCode terminal from Terminal → New Terminal menu option, and type <br>
@@ -24,11 +26,18 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 Type `yes` and press the enter key.
 
-Then, you'll be asked your password. Type your password and enter, and you'll terminal will be like this.
-<img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午前11.58.38.png" width="70%">
+Then, you'll be asked your password. Type your password and enter, and now you're logged in. You'll terminal will be like this.
 
-**Trying Some Commands**
+<img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午後4.17.29.png" width="70%">
 
+## 3. Trying Some Commands <br>
+Try some basic commands in your terminal. For example,
+* `cd ~`
+* `cd`
+* `ls -lat`
+* `ls -a` 
 
+You can get the screen like this. (Note: there are some other commands that I didn't mention but are on the screen, too!)
+<img src=.>
 
 
