@@ -1,4 +1,4 @@
-# Tutorial
+# Lab homework1
 ## How to log into your course-specific account on `ieng6`?
 
 ## 1. Installing VSCode <br>
