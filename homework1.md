@@ -32,7 +32,7 @@ Then, you'll be asked your password. Type your password and enter, and now you'r
 
 ## 3. Trying Some Commands 
 Try some commands in your terminal, such as
-* `ls -a` , which is used to list the filees and folders the given path.
+* `ls -a` , which is used to list the files and folders the given path.
 * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`, which is used to print the contents of the file fiven by the pass.
 
 You can get the screen like this. For instance, when you type `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`, you'll see the contents of `hello.txt`, which is "Hello! Welcome to CSE 15L".
