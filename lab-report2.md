@@ -54,55 +54,57 @@ class StringServer {
   * From this specific request, the value of `list` changes from `"" + "\n" + "Hello"` to `"" + "\n" + "Hello" + "\n" + "Bye"`.
 
 ## Part2 
-**I chose `ArrayExamples.java` as a buggy program.**
+**I chose `static void reverseInPlace(int[] arr)` from `ArrayExamples.java` as a buggy program.**
 ```
-public class ArrayExamples {
-
-  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
+// Changes the input array to be in reversed order
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
+        arr[i] = arr[arr.length - i - 1];
     }
-  }
-
-  // Returns a *new* array with all the elements of the input array in reversed
-  // order
-  static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
-    }
-    return arr;
-  }
-
-  // Averages the numbers in the array (takes the mean), but leaves out the
-  // lowest number when calculating. Returns 0 if there are no elements or just
-  // 1 element in the array
-  static double averageWithoutLowest(double[] arr) {
-    if(arr.length < 2) { return 0.0; }
-    double lowest = arr[0];
-    for(double num: arr) {
-      if(num < lowest) { lowest = num; }
-    }
-    double sum = 0;
-    for(double num: arr) {
-      if(num != lowest) { sum += num; }
-    }
-    return sum / (arr.length - 1);
-  }
-
-
 }
 ```
 **1. A failure-inducing input for the buggy program**
-
+```
+public void testReverseInPlace() {
+    int[] input1 = { 3, 4 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 4, 3 }, input1);
+	}
+```
 **2. An input that doesn’t induce a failure.**
-
+```
+public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+```
 **3. The symptom.**
+
 
 **4. The bug**
 - Before fixed
+```
+// Changes the input array to be in reversed order
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
+}
+```
 - After fixed
+```
+// Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    int[] newArr = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArr[i] = arr[arr.length - i - 1];
+    }
+    for (int i = 0; i < arr.length; i+= 1) {
+      arr[i] = newArr[i];
+    }
+  }
+```
 
 ## Part3
 From lab in week 2, I learned the relationship between java files and the internet server. I didn't know 
