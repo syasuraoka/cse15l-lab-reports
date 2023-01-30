@@ -39,7 +39,7 @@ class StringServer {
 ```
 **2. If I type `http://localhost:5555/add-message?s=Hello`, the page shows**
 
-<img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午前10.20.25.png" width="35%">
+<img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
 
   * Here, two methods `public String handleRequest(URI url)` and `public static void main(String[] args) throws IOException` are called.
   * `list += "\n" + Hello`, `int port = Integer.parseInt(5555)` are the relevant arguments to those methods, and ?? are the values of any relevant fields of the class.
@@ -47,7 +47,7 @@ class StringServer {
 
 **3. And after I type `http://localhost:5555/add-message?s=Bye`, the page shows**
 
-<img src="https://raw.githubusercontent.com/syasuraoka/cse15l-lab-reports/main/スクリーンショット%202023-01-16%20午前10.20.25.png" width="35%">
+<img src="スクリーンショット 2023-01-29 午後4.24.13.png" width="80%">
 
   * Here, two methods `public String handleRequest(URI url)` and `public static void main(String[] args) throws IOException` are called.
   * `list += "\n" + Bye`, `int port = Integer.parseInt(5555)` are the relevant arguments to those methods, and ?? are the values of any relevant fields of the class.
@@ -81,6 +81,7 @@ public void testReverseInPlace() {
 ```
 **3. The symptom.**
 
+<img src="スクリーンショット 2023-01-29 午後6.15.52.png" width="80%">
 
 **4. The bug**
 - Before fixed
@@ -105,7 +106,8 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
+Since this fixed program put `newArr` as a temporary array to store the reverded array, the elements of the reversed array can be stored correctly in the first for loop. Thus, the reversed array can be substituted correctly into the original array. 
 
 ## Part3
-From lab in week 2, I learned the relationship between java files and the internet server. I didn't know 
+From lab in week 2, I learned the connection between java files and the search bar. I didn't know the way java files read URI and show the output on screen. Lab in week 2 was really good time for me to get familiar with processing URIs in java using specific commands such as `getPath()` and `getQuery()`.
 
