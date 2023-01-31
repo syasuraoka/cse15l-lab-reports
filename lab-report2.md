@@ -37,7 +37,7 @@ class StringServer {
     }
 }
 ```
-**2. After I type `http://localhost:5555/add-message?s=Hello`, the page shows**
+**2. If I type `http://localhost:5555/add-message?s=Hello`, the page shows**
 
 <img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
 
