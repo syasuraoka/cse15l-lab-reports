@@ -37,21 +37,21 @@ class StringServer {
     }
 }
 ```
-**2. If I type `http://localhost:5555/add-message?s=Hello`, the page shows**
+**2. After I type `http://localhost:5555/add-message?s=Hello`, the page shows**
 
 <img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
 
   * Here, two methods `public String handleRequest(URI url)` and `public static void main(String[] args) throws IOException` are called.
-  * `list += "\n" + Hello`, `int port = Integer.parseInt(5555)` are the relevant arguments to those methods, and ?? are the values of any relevant fields of the class.
-  * From this specific request, the value of `list` changes from `""` to `"" + "\n" + "Hello"`.
+  * `http://localhost:5555/add-message?s=Hello` is the relevant argument to method `public String handleRequest(URI url)`, and `5555` is the relevant argument to method `public static void main(String[] args) throws IOException`. And `String list = ""`, `int port = Integer.parseInt(args[0])` are the value of any relevant fields of the class.
+  * From this specific request, the value of `list` changes from `""` to `"" + "\n" + "Hello"`, and the value of `port` becomes `5555`.
 
 **3. And after I type `http://localhost:5555/add-message?s=Bye`, the page shows**
 
 <img src="スクリーンショット 2023-01-29 午後4.24.13.png" width="80%">
 
   * Here, two methods `public String handleRequest(URI url)` and `public static void main(String[] args) throws IOException` are called.
-  * `list += "\n" + Bye`, `int port = Integer.parseInt(5555)` are the relevant arguments to those methods, and ?? are the values of any relevant fields of the class.
-  * From this specific request, the value of `list` changes from `"" + "\n" + "Hello"` to `"" + "\n" + "Hello" + "\n" + "Bye"`.
+  * `http://localhost:5555/add-message?s=Bye` is the relevant argument to method `public String handleRequest(URI url)`, and `5555` is the relevant argument to method `public static void main(String[] args) throws IOException`. And `String list = "" + "\n" + "Hello"`, `int port = 5555` are the values of any relevant fields of the class.
+  * From this specific request, the value of `list` changes from `"" + "\n" + "Hello"` to `"" + "\n" + "Hello" + "\n" + "Bye"`, but the value of `port` doesn't change because the argument is the same.
 
 ## Part2 
 **I chose `static void reverseInPlace(int[] arr)` from `ArrayExamples.java` as a buggy program.**
