@@ -33,7 +33,7 @@ The -e option is used to specify a pattern to search for. This option is useful 
 
 * Example1: `grep -e "Shibuya" -e "Shinagawa" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 
-  <img src="スクリーンショット 2023-02-12 午後6.45.10.png" width="80%">
+  <img src="スクリーンショット 2023-02-12 午後6.50.07.png" width="80%">
   
 * Example2: `grep -e "Shinjuku" -e "Ginza" written_2/travel_guides/berlitz1/WhereToJapan.txt`
   
