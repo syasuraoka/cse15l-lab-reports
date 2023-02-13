@@ -25,7 +25,7 @@ The -i option is used to specify that grep should perform a case-insensitive sea
 	
 * Example2: `grep -i "SHIBUYA" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 
-  <img src="スクリーンショット 2023-02-09 午後1.35.34.png" width="80%">
+  <img src="スクリーンショット 2023-02-12 午後6.43.42.png" width="80%">
 
 **3. `grep -e <string> -e <string> <file>`**
 
@@ -33,9 +33,11 @@ The -e option is used to specify a pattern to search for. This option is useful 
 
 * Example1: `grep -e "Shibuya" -e "Shinagawa" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 
-  <img src="スクリーンショット 2023-02-09 午後1.35.34.png" width="80%">
+  <img src="スクリーンショット 2023-02-12 午後6.45.10.png" width="80%">
   
 * Example2: `grep -e "Shinjuku" -e "Ginza" written_2/travel_guides/berlitz1/WhereToJapan.txt`
+  
+  <img src="スクリーンショット 2023-02-12 午後6.45.10.png" width="80%">
 
 **4. `grep -c <string> <file>`**
 
@@ -43,9 +45,9 @@ The -c option is used to specify that grep should display only a count of the nu
 
 * Example1: `grep -c "Shibuya" written_2/travel_guides/berlitz1/WhereToJapan.txt`
   
-  <img src="スクリーンショット 2023-01-29 午後4.24.13.png" width="80%">
+  <img src="スクリーンショット 2023-02-12 午後6.45.32.png" width="80%">
   
 * Example2: `grep -c "Shinagawa" written_2/travel_guides/berlitz1/WhereToJapan.txt`
   
-  <img src="スクリーンショット 2023-01-29 午後4.24.13.png" width="80%">
+  <img src="スクリーンショット 2023-02-12 午後6.45.49.png" width="80%">
  
