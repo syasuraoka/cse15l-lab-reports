@@ -7,13 +7,13 @@ The -r option is used to specify that grep should search for the pattern in a re
 
 * Example1: `grep -r "Lucayans"`
   
-  <img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
+  <img src="スクリーンショット 2023-02-09 午後1.03.19.png" width="80%">
 
   Here, I can find a file whose name contains `Lucayans` from skill-demo1-data directory. It's useful for 
 
 * Example2: `grep -r "Shibuya"`
 
-  <img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
+  <img src="スクリーンショット 2023-02-09 午後1.22.17.png" width="80%">
 
 **2. `grep -i <string> <file>`**
 
@@ -21,11 +21,11 @@ The -i option is used to specify that grep should perform a case-insensitive sea
 
 * Example1: `grep -i "SHINAGAWA" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 	
-  <img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
+  <img src="スクリーンショット 2023-02-09 午後1.24.49.png" width="80%">
 	
 * Example2: `grep -i "OSAKA" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 
-  <img src="スクリーンショット 2023-01-29 午後4.23.57.png" width="80%">
+  <img src="スクリーンショット 2023-02-09 午後1.35.34.png" width="80%">
 
 **3. `grep -e <string> -e <string> <file>`**
 
