@@ -29,13 +29,13 @@ I typed `cd lab7` to go to lab7 directory. Then, the `javac -cp .:lib/hamcrest-c
   
 <img src="Step7-1.png" width="80%">
 
-<img src="Step7-2.png" width="80%">
+<img src="Step7-2-new.png" width="80%">
 
 <img src="Step7-3.png" width="80%">
   
-Keys pressed: `<up><up><up><up><up><up><enter>`, many keys to fix the `ListExamples.java` file, `^X`, `Y`, `<enter>` 
+Keys pressed: `<up><up><up><up><up><up><enter>`, some keys to fix the `ListExamples.java` file, `^X`, `Y`, `<enter>` 
   
-`nano ListExamples.java` command was 6 up in the search history, so I used up arrow to access it. Then, I fixed `ListExamples.java` file and saved it, and exited from the file. 
+`nano ListExamples.java` command was 6 up in the search history, so I used up arrow to access it. Then, I fixed `ListExamples.java` file (`index1 += 1` → `index2 += 1` in the last while loop) and saved it, and exited from the file. 
   
 ## Step8. Run the tests, demonstrating that they now succeed
   
