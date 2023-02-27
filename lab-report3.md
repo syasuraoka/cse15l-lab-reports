@@ -59,7 +59,7 @@ The -e option is used to specify multiple search patterns, each preceded by the 
 
 The -c option is used to specify that grep should display only a count of the number of lines that match the pattern, instead of the lines themselves.
 
-(Source: ChatGPT)
+(Source: https://chat.openai.com/chat)
 
 * Example1: `grep -c "Shibuya" written_2/travel_guides/berlitz1/WhereToJapan.txt`
   
