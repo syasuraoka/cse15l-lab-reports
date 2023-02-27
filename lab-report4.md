@@ -1,16 +1,6 @@
 # Lab Report 4
 ## Reproduce the task from the competition on your own
 
-For each numbered step starting right after the timer (so steps 4-9), take a screenshot, and write down exactly which keys you pressed to get to that step. For special characters like <enter> or <tab>, write them in angle brackets with code formatting. Then, summarize the commands you ran and what the effect of those keypresses were.
-
-For example, when you run the tests, you might want to use the up arrow or Ctrl-R to access your bash history rather than typing in the full command with classpath, etc. You might say something like this accompanying the screenshot for running the tests:
-
-Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter>
-
-The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 4 up in the search history, so I used up arrow to access it. Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore command was 4 up in the history, so I accessed and ran it in the same way.
-
-Add this lab report to your Github Pages site, and submit a PDF of it as usual.
-
 **Step4. Log into ieng6**
 
 <img src="スクリーンショット 2023-02-09 午後1.03.19.png" width="80%">
@@ -39,9 +29,9 @@ I typed `cd lab7` to go to lab7 directory. Then, the `javac -cp .:lib/hamcrest-c
   
 <img src="スクリーンショット 2023-02-09 午後1.03.19.png" width="80%">
   
-Keys pressed: `<up><up><up><up><up><up><enter>`, many keys to fix the ListExamples.java file, `^X`, `Y`, `<enter>` 
+Keys pressed: `<up><up><up><up><up><up><enter>`, many keys to fix the `ListExamples.java` file, `^X`, `Y`, `<enter>` 
   
-I typed `cd lab7` to go to lab7 directory. Then, the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command was 6 up in the search history, so I used up arrow to access it. Then, the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` command was 6 up in the history, so I accessed and ran it in the same way.
+`nano ListExamples.java` command was 6 up in the search history, so I used up arrow to access it. Then, I fixed `ListExamples.java` file and saved it, and exited from the file. 
   
 **Step8. Run the tests, demonstrating that they now succeed**
   
