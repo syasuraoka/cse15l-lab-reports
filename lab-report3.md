@@ -5,7 +5,7 @@
 
 The -r option is used to specify that grep should search for the pattern in a recursive manner. It should search for the pattern not just in the specified file, but also in all of the files in subdirectories of the current directory.
 
-(Source: https://eng-entrance.com/linux-command-grep)
+(Source: [https://eng-entrance.com/linux-command-grep](https://eng-entrance.com/linux-command-grep))
 
 * Example1: `grep -r "Lucayans"`
   
@@ -23,7 +23,7 @@ The -r option is used to specify that grep should search for the pattern in a re
 
 The -i option is used to specify that grep should perform a case-insensitive search, meaning that the search will match the pattern regardless of whether the letters in the pattern are uppercase or lowercase.
 
-(Source: https://eng-entrance.com/linux-command-grep)
+(Source: [https://eng-entrance.com/linux-command-grep](https://eng-entrance.com/linux-command-grep))
 
 * Example1: `grep -i "SHINAGAWA" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 	
@@ -41,7 +41,7 @@ The -i option is used to specify that grep should perform a case-insensitive sea
 
 The -e option is used to specify multiple search patterns, each preceded by the -e option. This option is useful when I need to search for multiple patterns in a single command.
 
-(Source: https://eng-entrance.com/linux-command-grep)
+(Source: [https://eng-entrance.com/linux-command-grep](https://eng-entrance.com/linux-command-grep))
 
 * Example1: `grep -e "Shibuya" -e "Shinagawa" written_2/travel_guides/berlitz1/WhereToJapan.txt`
 
@@ -59,7 +59,7 @@ The -e option is used to specify multiple search patterns, each preceded by the 
 
 The -c option is used to specify that grep should display only a count of the number of lines that match the pattern, instead of the lines themselves.
 
-(Source: https://chat.openai.com/chat)
+(Source: [https://chat.openai.com/chat](https://chat.openai.com/chat))
 
 * Example1: `grep -c "Shibuya" written_2/travel_guides/berlitz1/WhereToJapan.txt`
   
