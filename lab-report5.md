@@ -3,74 +3,77 @@
 
 **1. `find <directory> -name <pattern>`**
 
-"find -name" is a command used in the terminal or command prompt to search for files and directories that match a specific name or pattern.
+`find -name` is a command used in the terminal or command prompt to search for files and directories that match a specific name or pattern. Note that `.` as `<directory>` indicates current directory.
 
 (Source: [https://eng-entrance.com/linux-command-find](https://eng-entrance.com/linux-command-find))
 
-* Example1: `find . -name "find-results.txt"`
+* Example1: `find . -name '*a'`
   
-  <img src="スクリーンショット 2023-02-09 午後1.03.19.png" width="80%">
+  <img width="699" alt="スクリーンショット 2023-03-10 午後8 48 45" src="https://user-images.githubusercontent.com/115061986/224465515-81dbabf9-4bd3-43e7-b9e2-c989a731a5ac.png">
 
-  Here, I can find a file called `find-results.txt` from skill-demo1-data directory. It can be more efficient than manually searching through directories.
+  Here, I can find files ending with a. This is more efficient than manually searching through directories to find files ending with a.
   
-* Example2: `find . -name "written_2"`
+* Example2: `find . -name 'a*'`
 
-  <img src="スクリーンショット 2023-02-09 午後1.22.17.png" width="80%">
+  <img width="699" alt="スクリーンショット 2023-03-10 午後8 49 04" src="https://user-images.githubusercontent.com/115061986/224465524-a0f8028a-b61b-4441-b2bf-4474bf187a1b.png">
+
+  Here, I can find files starting with a. This is more efficient than manually searching through directories to find files starting with a.
+
+**2. `find <directory> -size <size>`**
+
+`find -size` is a command used in the terminal or command prompt that lists files of a specified size or smaller. Note that `.` as `<directory>` indicates current directory.
+
+(Source: [https://eng-entrance.com/linux-command-find](https://eng-entrance.com/linux-command-find))
+
+* Example1: `find . -size -6c`
+
+  <img width="586" alt="スクリーンショット 2023-03-10 午後7 38 24" src="https://user-images.githubusercontent.com/115061986/224463123-00a4f598-cb75-4cf3-8589-1d17e773011e.png">
+
+  Here, I can find several files under 6 bytes (6c means 6 bytes). This is useful when searching/listing files of 6 bytes or less.
   
-  Here, I can find a file which contains `Shibuya` from skill-demo1-data directory. It's useful when I don't know which file has Shibuya.
+* Example2: `find . -size -60c`
 
-**2. `grep -i <string> <file>`**
+  <img width="586" alt="スクリーンショット 2023-03-10 午後7 38 05" src="https://user-images.githubusercontent.com/115061986/224463107-9aa3932f-d49b-465c-aa3b-e09857eeeb04.png">
+  
+  Here, I can find several files under 60 bytes (60c means 60 bytes). This is useful when searching/listing files of 60 bytes or less.
 
-The -i option is used to specify that grep should perform a case-insensitive search, meaning that the search will match the pattern regardless of whether the letters in the pattern are uppercase or lowercase.
+
+**3. `find <directory> -atime <time>`**
+
+`find -atime` is a command used in the terminal or command prompt that lists files accessed at a specified time or later/earlier. Note that `-` in `<time>` indicates within, and `+` in `<time>` indicates prior to. Also note that `.` as `<directory>` indicates current directory.
 
 (Source: [https://eng-entrance.com/linux-command-grep](https://eng-entrance.com/linux-command-grep))
 
-* Example1: `grep -i "SHINAGAWA" written_2/travel_guides/berlitz1/WhereToJapan.txt`
-	
-  <img src="スクリーンショット 2023-02-09 午後1.24.49.png" width="80%">
+* Example1: `find . -atime -3`
+
+  <img width="586" alt="スクリーンショット 2023-03-10 午後8 19 15" src="https://user-images.githubusercontent.com/115061986/224464776-fcd698a6-e81f-4b5a-a088-cffdd9152251.png">
+
   
-  Here, I can find a word `SHINAGAWA`(case-insensitive) from `WhereToJapan.txt` file. It's useful when I am not sure whether to use upper or lower case letters to find Shinagawa.
-	
-* Example2: `grep -i "SHIBUYA" written_2/travel_guides/berlitz1/WhereToJapan.txt`
-
-  <img src="スクリーンショット 2023-02-12 午後6.43.42.png" width="80%">
+  Here, I can find files that are accessed within 3 days. It's useful when searching/listing files accessed within 3 days.
   
-  Here, I can find a word `SHIBUYA`(case-insensitive) from `WhereToJapan.txt` file. It's useful when I am not sure whether to use upper or lower case letters to find Shibuya.
-
-**3. `grep -e <string> -e <string> <file>`**
-
-The -e option is used to specify multiple search patterns, each preceded by the -e option. This option is useful when I need to search for multiple patterns in a single command.
-
-(Source: [https://eng-entrance.com/linux-command-grep](https://eng-entrance.com/linux-command-grep))
-
-* Example1: `grep -e "Shibuya" -e "Shinagawa" written_2/travel_guides/berlitz1/WhereToJapan.txt`
-
-  <img src="スクリーンショット 2023-02-12 午後6.50.07.png" width="80%">
+* Example2: `find . -atime +3`
   
-  Here, I can find two words `Shibuya` and `Shinagawa` from `WhereToJapan.txt` file. It's useful when I need to search both Shibuya and Shinagawa in a single command.
+  <img width="593" alt="スクリーンショット 2023-03-10 午後8 28 37" src="https://user-images.githubusercontent.com/115061986/224464861-6283f6a6-bda7-4a7e-a48c-a8d2dba84108.png">
   
-* Example2: `grep -e "Shinjuku" -e "Ginza" written_2/travel_guides/berlitz1/WhereToJapan.txt`
-  
-  <img src="スクリーンショット 2023-02-12 午後6.45.10.png" width="80%">
-  
-  Here, I can find two words `Shinjuku` and `Ginza` from `WhereToJapan.txt` file. It's useful when I need to search both Shinjuku and Ginza in a single command.
+  Here, I can find files that are accessed prior to the past 3 days. It's useful when searching/listing files accessed prior to the past 3 days.
 
-**4. `grep -c <string> <file>`**
+**4. `find <directory> -empty`**
 
-The -c option is used to specify that grep should display only a count of the number of lines that match the pattern, instead of the lines themselves.
+`find -empty` is a command used in the terminal or command prompt that lists empty files. Note that `.` as `<directory>` indicates current directory.
 
 (Source: [https://chat.openai.com/chat](https://chat.openai.com/chat))
 
-* Example1: `grep -c "Shibuya" written_2/travel_guides/berlitz1/WhereToJapan.txt`
+* Example1: `find . -empty `
   
-  <img src="スクリーンショット 2023-02-12 午後6.45.32.png" width="80%">
+  <img width="593" alt="スクリーンショット 2023-03-10 午後8 37 00" src="https://user-images.githubusercontent.com/115061986/224465187-9d610ae6-ea54-4141-b265-50a6cc6a0892.png">
+
   
-  Here, I can find the number of lines that has `Shibuya` in `WhereToJapan.txt` file. It's useful when I want to know the number of lines on which Shibuya is written.
+  Here, I can find empty files in my current directory. It's useful when searching/listing emtpy files in current directory.
   
-* Example2: `grep -c "Shinagawa" written_2/travel_guides/berlitz1/WhereToJapan.txt`
+* Example2: `find ./skill-demo1-data -empty`
   
-  <img src="スクリーンショット 2023-02-12 午後6.45.49.png" width="80%">
-  
-  Here, I can find the number of lines that has `Shinagawa` in `WhereToJapan.txt` file. It's useful when I want to know the number of lines on which Shinagawa is written.
+  <img width="699" alt="スクリーンショット 2023-03-10 午後8 37 51" src="https://user-images.githubusercontent.com/115061986/224465189-437fe5dc-c805-4996-a3ef-82e262048169.png">
+
+  Here, I can find empty files in `./skill-demo1-data`. It's useful when searching/listing empty files in `./skill-demo1-data`.
  
 
